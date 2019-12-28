@@ -54,7 +54,7 @@ export default {
 
   created() {
     axios
-            .get('/api')
+            .get('https://www.city.kitakyushu.lg.jp/cgi-bin/event/api.cgi')
             .then(res => this.events = res.data.events)
             // eslint-disable-next-line no-console
             .catch(err => console.log(err))
